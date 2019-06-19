@@ -1,0 +1,181 @@
+.login{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(54, 65, 80) !important;
+    .ivu-form-item {
+        margin-bottom: 24px !important;
+    }
+    .header-title{
+        color: #ffffff;
+        font-size: 22px;
+        text-align: center;
+        padding-bottom: 30px;
+        text-shadow: 2px 1px 0px rgb(0, 0, 0);
+        margin-top: 50px;
+    }
+    .screenBg {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+    &-con{
+        position: absolute;
+        right: 50%;
+        top: 35%;
+        width: 400px;
+        transform: translateX(50%) translateY(-50%);
+        &-header{
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .form-con{
+            padding: 10px 0 0;
+        }
+        .login-tip{
+            font-size: 10px;
+            text-align: center;
+            color: #c3c3c3;
+        }
+    }
+    .ivu{
+        &-card{
+            background-color: #eceef1;
+            border-radius: 0;
+            &-body{
+                margin-top: -25px;
+                padding: 16px 30px;
+            }
+            &-head{
+                border-bottom: 0 none;
+                padding: 10px;
+                p{
+                    padding: 20px 0 25px;
+                    color: #409eff;
+                    text-align: center;
+                    font-size: 28px;
+                    font-weight: 400 !important;
+                }
+            }
+        }
+    }
+    .ivu-form-item-content{
+        .verify-code{
+            width: 50%;
+            height: 60px;
+            line-height: 60px;
+            font-size: 30px;
+            background-color: rgb(240, 255, 255);
+            color: rgb(0, 102, 153);
+            transform: scale(0.6);
+            transform-origin: left top;
+            margin-bottom: -20px;
+        }
+        .ivu-input-group-prepend{
+            padding: 4px 12px;
+            border-radius: 0;
+            background-color: rgb(221, 227, 236);
+        }
+        .ivu-input{
+            background-color: rgb(221, 227, 236);
+            height: 43px;
+            color: rgb(130, 144, 163);
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(221, 227, 236);
+            border-image: initial;
+            font-size: 14px;
+            border-radius: 0;
+        }
+        .ivu-btn-primary{
+            color: rgb(255, 255, 255);
+            background-color: #409eff;
+            border: 0 none;
+            font-weight: 600;
+            padding: 10px 20px !important;
+            font-size: 14px;
+            border-radius: 5px;
+            margin-right: 12px;
+        }
+        .ivu-btn-primary:hover{
+            background-color: #409eff;
+        }
+    }
+    .ivu-form-item-error {
+        .ivu-input-group-prepend{
+            background: #ffffff;
+        }
+        .ivu-input{
+            background: #ffffff;
+            border: 1px solid #ed3f14;
+        }
+    }
+    .re-password{
+        font-size: 14px;
+        color: #8290a3;
+        font-weight: 400;
+    }
+    .new_password {
+        margin-left: 100px;
+    }
+    .ivu-checkbox-checked .ivu-checkbox-inner {
+        border-color: #409eff;
+        background-color: #409eff;
+    }
+    .copy-right{
+        text-align: center;
+        margin: 0 auto 30px 0;
+        padding: 10px;
+        color: #7a8ca5;
+        font-size: 13px;
+    }
+    .btn-list{
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .more-info {
+        display: block;
+        text-align: center;
+    }
+}
+@media all and (max-width: 767.99px) {
+    .login{
+        &-con{
+            top: 45%;
+            width: 280px;
+        }
+    }
+}
+@media all and (min-width: 767.99px) {
+    .login{
+        &-con{
+            width: 460px;
+        }
+    }
+}
+@media all and (min-width: 991.99px) {
+    .login{
+        &-con{
+            width: 400px;
+        }
+    }
+}
+@media all and (min-width: 1199.99px) {
+    width: 400px;
+}
+// add
+.g-verify {
+    position: relative;
+    z-index: 10;
+    margin-top: -5px;
+}
+.verify-input-area{
+    float: left;
+    width: 60%;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}

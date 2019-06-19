@@ -1,0 +1,16 @@
+/**
+ * @Author: dragon
+ * @Date: 2019-06-16 20:11:55
+ * @Desc: base style definition
+ */
+body {
+    font-family: 微软雅黑 !important;
+    font-size: 14px;
+}
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    outline: none !important;
+}

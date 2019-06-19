@@ -1,0 +1,23 @@
+.trans{
+  transition: transform .2s ease;
+}
+@size: 40px;
+.sider-trigger-a{
+  padding: 6px;
+  width: @size;
+  height: @size;
+  display: inline-block;
+  text-align: center;
+  color: #5c6b77;
+  margin-top: 12px;
+  i{
+    // menu icon距离顶部位置
+    .trans;
+    vertical-align: top;
+  }
+  &.collapsed i{
+    // menu icon翻转
+    transform: rotateZ(90deg);
+    .trans;
+  }
+}
